@@ -1,0 +1,16 @@
+{
+  "name": "dark-touch-auto-whatsapp",
+  "version": "1.0.0",
+  "description": "Dark Touch Recruitment with Automatic WhatsApp Integration",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
